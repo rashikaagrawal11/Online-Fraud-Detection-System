@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <title>Deepfake Detection</title>
+</head>
+<body>
+    <h1>Upload Audio or Video</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="audio">Audio File:</label>
+        <input type="file" name="audio" accept=".wav">
+        <br>
+        <label for="video">Video File:</label>
+        <input type="file" name="video" accept=".mp4">
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

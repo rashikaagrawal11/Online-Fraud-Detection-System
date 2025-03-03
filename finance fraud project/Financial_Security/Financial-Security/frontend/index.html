@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fraud Detection System</h1>
+        <form action="/detect" method="POST" enctype="multipart/form-data">
+            <label for="text">Enter Text for Fraud Detection:</label>
+            <textarea name="text" id="text" placeholder="Type your message here..."></textarea>
+            <button type="submit">Analyze Text</button>
+        </form>
+        <hr>
+        <form action="/detect_audio" method="POST" enctype="multipart/form-data">
+            <label for="file">Upload Audio for Deepfake Detection:</label>
+            <input type="file" name="file" id="file" accept="audio/*">
+            <button type="submit">Analyze Audio</button>
+        </form>
+    </div>
+</body>
+</html>
